@@ -1,0 +1,69 @@
+#intro{
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.introText{
+    font-size: 2rem;
+}
+.bg{
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 2rem;
+    /* font-weight: 100; */
+}
+.introName{
+    color: aqua;
+    font-size: 3rem;
+}
+.introPara{
+    font-size: medium;
+    /* font-weight: 100; */
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+.btn{
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+.btn:hover{
+    background-color: aqua;
+}
+.btnImg{
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+@media screen and (max-width:800px) {
+    .bg{right: -10vw;}
+    .introContent{font-size: 6vw;}
+    .hello{font-size: 4.5vw;}
+}
+@media screen and (max-width:600px) {
+    .bg{right: -20vw;height: 80vh;}
+    /* .introContent{font-size: 5vw;} */
+    /* .hello{font-size: 3.5vw;} */
+    /* .introPara{font-size: 2vw;} */
+}
