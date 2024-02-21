@@ -1,0 +1,27 @@
+F:\Portfolio> npx create-react-app portfolio
+
+F:\Portfolio> cd portfolio
+
+F:\Portfolio\portfolio> npm start
+
+except App.js Delete all things from src
+
+npm i react-scroll
+
+https://www.emailjs.com/docs/sdk/installation/
+$ npm install @emailjs/browser --save
+
+
+add to github by...
+
+npm install gh-pages --save-dev
+git remote add origin https://github.com/TarunMaheswari/PORTFOLIO.git
+
+open package.json-->
+"homepage": "http://TarunMaheswari.github.io/PORTFOLIO/",
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+
+npm run deploy
